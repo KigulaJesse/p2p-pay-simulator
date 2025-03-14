@@ -14,11 +14,6 @@ class User(Base):
     balance = Column(Float, default=0.0)
     
     def __repr__(self):
-        print("")
-        print(self.name)
-        print(self.balance)
-        # print(self.name)
-        print("")
         return f"<User(name={self.name}, balance={self.balance})>"
     
 class Transaction(Base):
