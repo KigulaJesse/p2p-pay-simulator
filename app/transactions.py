@@ -16,3 +16,6 @@ def send_money(sender_name, receiver_name, amount):
     session.commit()
 
     return f"Transfer successful: {sender_name} sent {amount} to {receiver_name}"
+
+def deposit_money(depositor_name, amount):
+    return f"Thank you {depositor_name}. Your money amounting to {amount} has safely been deposited"
